@@ -1,17 +1,48 @@
+body {
+    text-align: center;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 2rem;
+}
+
+main {
+    background-color: red;
+    padding: 5%;
+}
+
 div {
     margin: auto;
     content: center;
 }
 
+img {
+    margin: 10px;
+}
+
 .profile {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 .post {
-    width: 50%;
-    height: 50%;
+    background-color: white;
+    padding: 30px;
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
+.post_head {
+    display: flex;
+}
+
+.post_img {
+    width: 75%;
+    height: auto;
 }
 
 a:hover {
