@@ -17,14 +17,9 @@
     </header>
 
     <main>
-        <p>username: <input name="username" type="text"></p>
-        <p>bio: <input name="bio" type="text"></p>
-        <input name="submit" type="submit">
+        <form action="/action_page.php">
+            <input type="file" id="post_file" name="filename">
+            <input type="submit" onclick="create_post()">
+        </form>
     </main>
 </body>
-
-<footer>
-    <a href="index.html">home</a>
-</footer>
-
-</html>

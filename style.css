@@ -34,6 +34,7 @@ img {
     width: 25%;
     height: auto;
     display: inline-block;
+    border-radius: 10%;
 }
 
 .post_head {
@@ -50,5 +51,6 @@ a:hover {
 }
 
 input {
-    display: block;
+    display: inline-block;
+    border-radius: 10%;
 }
