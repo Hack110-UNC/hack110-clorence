@@ -48,3 +48,7 @@ img {
 a:hover {
     color: red;
 }
+
+input {
+    display: block;
+}
