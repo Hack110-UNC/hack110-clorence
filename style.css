@@ -1,0 +1,19 @@
+div {
+    margin: auto;
+    content: center;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.post {
+    width: 50%;
+    height: 50%;
+}
+
+a:hover {
+    color: red;
+}
