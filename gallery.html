@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>website title</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <a href="gallery.html">Gallery</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+
+    <div class="post">
+        <div class="post_head">
+            <img class="profile" src="imgs/pfp.jpg">
+            <p id="username"><b>@username</b></p>
+        </div>
+        <p id="caption">a better bar is not better than a kind bar</p>
+        <img class="post_img" id="file" src="imgs/kind.png" alt="a kind bar">
+    </div>
+
+
+    <footer>
+        <h1>Create a post!</h1>
+        <p>Image: <input type="file" id="file_input"></p>
+        <p>Caption: <input type="text" id="caption_input"></p>
+        <button onclick="create()">Post</button>
+    </footer>
+</body>
+
+</html>
