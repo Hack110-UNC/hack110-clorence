@@ -18,6 +18,7 @@ header {
     background-color: #436e6f;
     color: white;
     padding: 2rem;
+    margin-bottom: 20px;
 }
 
 
@@ -60,6 +61,8 @@ a:hover {
 
 footer {
     background-color: #f7ebe7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #436e6f;
+    padding: 2rem;
 }
 
 input {

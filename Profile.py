@@ -15,5 +15,4 @@ class Profile:
     def edit_username(self):
         self.username = input("Update username.")
 
-def upload_img():
     
