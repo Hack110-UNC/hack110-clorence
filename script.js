@@ -8,29 +8,35 @@ function edit() {
     window.location.href = "profile.html"
 }
 
-window.onload = function() {
-
-}
-
 function create() {
-    var file = document.getElementById("file").value
-    var caption = document.getElementById("caption").value
+    var file_in = document.getElementById("file_input").files[0];
+    var caption_txt = document.getElementById("caption_input").value;
 
-    localStorage.setItem("file", file)
-    localStorage.setItem("caption", caption)
+    var new_post = document.createElement("div");
+    new_post.className = "post";
 
-    window.location.href = "index.html"
+    var caption = document.createElement("p");
+    caption.innerText = caption_txt;
+    new_post.appendChild(caption);
+
+    var new_img = document.createElement("img");
+    new_img.className = "post_img";
+    new_img.src = URL.createObjectURL(file_in);
+    new_post.appendChild(new_img);
+
+    document.querySelector("main").appendChild(new_post);
 }
 
-window.onload = function() {
+
+window.onload = function () {
     var username = localStorage.getItem("username")
     var bio = localStorage.getItem("bio")
-    var file = localStorage.getItem("file")
-    var caption = localStorage.getItem("caption")
 
-    document.getElementById("caption").innerText = caption
-    document.getElementById("file").src = file
-    document.getElementById("username").innerText = username
-    document.getElementById("bio").innerText = bio
-    
+    if (document.getElementById("username") && username) {
+        document.getElementById("username").innerText = username
+    }
+
+    if (document.getElementById("bio") && bio) {
+        document.getElementById("bio").innerText = bio
+    }
 }
