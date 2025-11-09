@@ -1,7 +1,10 @@
 function edit() {
+    var pfp = document.getElementById("pfp").files[0]
+    var pfp_url = URL.createObjectURL(pfp)
     var username = "@" + document.getElementById("username").value
     var bio = document.getElementById("bio").value
 
+    localStorage.setItem("pfp", pfp_url)
     localStorage.setItem("username", username)
     localStorage.setItem("bio", bio)
 
@@ -9,8 +12,12 @@ function edit() {
 }
 
 window.onload = function () {
+    var pfp = localStorage.getItem("pfp")
     var username = localStorage.getItem("username")
     var bio = localStorage.getItem("bio")
+
+    if (document.getElementById("pfp") && pfp) {
+        document.getElementById("pfp").src = pfp}
 
     if (document.getElementById("username") && username) {
         document.getElementById("username").innerText = username
